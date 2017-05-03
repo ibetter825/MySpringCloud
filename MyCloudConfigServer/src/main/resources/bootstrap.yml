@@ -1,0 +1,12 @@
+spring:
+  #application:
+    #name: spring-cloud-config-server
+  cloud:
+    config:
+      server:
+        git:  #还可配置svn,本地存储等
+          uri: https://github.com/ibetter825/SpringCloudConfig  #配置git仓库地址
+          searchPaths: props  #配置仓库路径
+          username: ibetter825  #访问git仓库的用户名
+          password: y825725y  #访问git仓库的用户密码
+      label: master  #配置仓库的分支

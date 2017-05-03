@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: Spring Cloud Config Server
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: user
+Implementation-Vendor-Id: com.mpro.config
+Build-Jdk: 1.8.0_20
+Implementation-URL: http://projects.spring.io/spring-boot/MyCloudConfi
+ gServer/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

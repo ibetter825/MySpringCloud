@@ -1,0 +1,10 @@
+#eureka-client的配置文件bootstrap.yml和application.yml, bootstrap.yml先于application.yml加载，一般不变的东西写在bootstrap里，使用一样： application.yml
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/
+server:
+  port: 8763     #指定服务端口
+spring:
+  application:
+    name: cloud-ribbon-01    #为你的应用起个名字，该名字将注册到eureka注册中心，这个很重要，这在以后的服务与服务之间相互调用一般都是根据这个name

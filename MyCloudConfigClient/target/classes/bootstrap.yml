@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: config-client  #name的名字必须与config server连接的git地址的配置文件名一致, 此处的名字就为: config-client-dev.properties
+  cloud:
+    config:
+      env: default
+      label: master  #指明远程仓库的分支
+      #name: name  #如果与git中的文件名对应不上可配置次属性，应该可以通过此属性直接指定
+      profile: dev  #dev开发环境配置文件, test测试环境, pro正式环境 
+      uri: http://127.0.0.1:8888/  #指明配置服务中心的网址

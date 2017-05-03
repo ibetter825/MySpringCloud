@@ -1,0 +1,18 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/
+server:
+  port: 8769
+spring:
+  application:
+    name: cloud-zuul-01
+zuul:
+  #以/api-a/ 开头的请求都指向service-ribbon；以/api-b/开头的请求都指向service-feign；
+  routes:
+    api-a:
+      path: /api-a/**
+      serviceId: cloud-ribbon-01
+    api-b:
+      path: /api-b/**
+      serviceId: cloud-feign-01

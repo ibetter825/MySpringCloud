@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: Eureka Server
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: user
+Implementation-Vendor-Id: com.mypro.server
+Build-Jdk: 1.8.0_20
+Implementation-URL: http://projects.spring.io/spring-boot/MyCloudServe
+ r/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

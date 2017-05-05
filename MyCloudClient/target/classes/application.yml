@@ -2,7 +2,9 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://127.0.0.1:8761/eureka/
+      #defaultZone: http://127.0.0.1:8761/eureka/
+      #Eureka Server集群化客户端配置方式
+      defaultZone: http://peer2:8769/eureka/,http://peer1:8761/eureka/
 server:
   port: 8762     #指定服务端口
 spring:

@@ -1,0 +1,15 @@
+Eureka通过运行多个实例，使其更具有高可用性。事实上，这是它默认的熟性，你需要做的就是给对等的实例一个合法的关联serviceurl
+1.Eureka Server集群化配置将application.yml拆分为以下两个,并去除application.yml
+新建application-peer1.yml与application-peer2.yml两个配置文件
+2.按照官方文档的指示，需要改变etc/hosts，Linux系统通过vim /etc/hosts ,加上：
+127.0.0.1 peer1
+127.0.0.1 peer2
+windows电脑，在c:/windows/systems/drivers/etc/hosts 修改。
+
+3.然后将项目打包为jar
+分别启动
+java -jar MyCloudServer-0.0.1-SNAPSHOT.jar --spring.profiles.active=peer1
+java -jar MyCloudServer-0.0.1-SNAPSHOT.jar --spring.profiles.active=peer2
+
+5.参考资料
+http://blog.csdn.net/sosfnima/article/details/53178305
